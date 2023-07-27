@@ -279,8 +279,9 @@ form div{
 }
 form button{
     background-color:chocolate;
-    height:30px;
+    height:34px;
     width:40px;
+    border:none;
 }
 .footerDiv3{
     /* background-image:linear-gradient(to right,black,#002147); */
