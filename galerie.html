@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        input {
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            color: rgb(219, 216, 216);
+        }
+        
+        article {
+            padding: 20px 0;
+        }
+        
+        tr {
+            margin-top: 20px !important;
+        }
+        .container-0{
+             background-image: url("section3.png");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+        .container-1{
+             width:100% !important;
+             height:100% !important;
+             background-color: black;
+             opacity: .8;
+         }
+        .container-2 {
+            display: flex;
+            justify-content: space-around !important;
+            height: 50vh;
+            padding-top: 60px;
+            align-items: baseline;
+            flex-wrap: wrap;
+            padding:0px 10px;
+        }
+        h1{
+            color: bisque;
+            text-align: center;
+            padding-top:100px;
+        }
+        </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <button class="btn" onclick="show();"><i class="icon fa-solid fa-bars"></i></button>
+            <ul class="nav-ul1" id="menu" class="menu">
+                <li><a href="acceuil.html">ACCEUIL</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="apropos.html">A PROPOS</a></li>
+            </ul>
+
+            <ul class="nav-ul2">
+                <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-0">
+
+    </section>
+
+    <footer class="footer">
+        <div class="footerDiv1">
+            <div>
+                <p>NOS PARTENAIRES</p>
+                <p>
+                    ORICHALCUM PICTURES vr-connection payoff technologiesdigiteyes
+                </p>
+            </div>
+            <div>
+                <p>ATLANTISORIGIN</p>
+                <p>ACHETer le jeu maintenant
+                    dossier de presse
+                    les salles eYdelon</p>
+            </div>
+            <div>
+                <p>NOUS SSUIVRE</p>
+                <p>
+                <ul>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="footerDiv2">
+
+            <form action="">
+                <label style="color:white;margin-right:20px;" for="email"> s'inscrir à la newsletter :</label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="entrer your email">
+                    <button type="submit"><i style="font-size:16px;padding:2px; color: white;" class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="footerDiv3">
+            <small>copyright 2018 orichalcum pictures</small>
+        </div>
+
+    </footer>
+    <script>
+        var menu = document.getElementById("menu");
+        function show() {
+            menu.classList.toggle('show');
+        }
+        window.addEventListener('scroll', function () {
+            var dcmt = document.getElementById("header");
+            dcmt.style.backgroundColor = "#002147";
+            menu.style.backgroundColor = "#002147";
+        });
+    </script>
+
+</body>
+</html>

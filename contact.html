@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        type="text/css">
+    <link rel="stylesheet" href="css.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        input {
+            width: 120px;
+            height: 40px;
+            font-weight: bold;
+        }
+
+        p {
+            color: rgb(219, 216, 216);
+        }
+        
+        article {
+            padding: 20px 0;
+        }
+        
+        tr {
+            margin-top: 20px !important;
+        }
+        .container-0{
+             background-image: url("images/section3.png");
+             background-position: center;
+             background-repeat: no-repeat;
+             background-size: cover;
+         }
+        .container-1{
+             height:auto !important;
+             background-color: black;
+             opacity: .8;
+         }
+        .container-2 {
+            display: flex;
+            justify-content: space-around !important;
+            height: 50vh;
+            padding-top: 60px;
+            align-items: baseline;
+            flex-wrap: wrap;
+            padding:0px 10px;
+        }
+        h1{
+            color: bisque;
+            text-align: center;
+            padding:100px 0 20px 0;
+         
+        }
+        @media screen and (max-width:800px){
+            .container-0{
+             background-image:linear-gradient(to right,#002147 80%,#003366);  
+       
+            }
+        }
+        </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <nav class="nav">
+            <button class="btn" onclick="show();"><i class="icon fa-solid fa-bars"></i></button>
+            <ul class="nav-ul1" id="menu" class="menu">
+                <li><a href="acceuil.html">ACCEUIL</a></li>
+                <li><a href="galerie.html">GALERIE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="apropos.html">A PROPOS</a></li>
+            </ul>
+
+            <ul class="nav-ul2">
+                <li> <a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="container-0">
+
+        <div class="container-1">
+            
+            <h1>CONTACTER NOUS</h1>
+
+            <div class="container-2" id="root">
+                <div>
+                    <p style="color:bisque">
+                        The Basics Of Buying A Telescope
+
+                    </p>
+                    <article>
+                        <p>In the history of modern astronomy, there is</p>
+                        <p>probably no one greater leap forward than</p>
+                        <p>the building and launch of the space telescope known as</p>
+                        <p>the Hubble. While NASA has had many ups and downs. </p>
+                    </article>
+                    <p>
+                        TEL : 172-62-t3705 france
+                    </p>
+                    <p>
+                        EMAIL : aufderhar_oleta@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td>
+                                    <input type="text" placeholder="NOM">
+                                </td>
+                                <td>
+                                    <input type="text" placeholder="PRENOM">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="tel" style="margin-top:10px;" placeholder="TEL">
+                                </td>
+                                <td>
+                                    <input type="text" style="margin-top:10px;" placeholder="SUJET"><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input style="width:242px;height: 50px;margin-top:10px;" type="text"
+                                        placeholder="MESSAGE">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <input style="width:242px;background-color: bisque; color: brown;margin-top:10px;"
+                                        type="submit" value="ENVOYER">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footerDiv1">
+            <div>
+                <p>NOS PARTENAIRES</p>
+                <p>
+                    ORICHALCUM PICTURES vr-connection payoff technologiesdigiteyes
+                </p>
+            </div>
+            <div>
+                <p>ATLANTISORIGIN</p>
+                <p>ACHETer le jeu maintenant
+                    dossier de presse
+                    les salles eYdelon</p>
+            </div>
+            <div>
+                <p>NOUS SSUIVRE</p>
+                <p>
+                <ul>
+                    <li><i class="fa-brands fa-twitter"></i></li>
+                    <li><i class="fa-brands fa-linkedin"></i></li>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                </ul>
+                </p>
+            </div>
+        </div>
+        <div class="footerDiv2">
+
+            <form action="">
+                <label style="color:white;margin-right:20px;" for="email"> s'inscrir à la newsletter :</label>
+                <div>
+                    <input type="email" name="email" id="email" placeholder="entrer your email">
+                    <button type="submit"><i style="font-size:16px;padding:2px; color: white;" class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="footerDiv3">
+            <small>copyright 2018 orichalcum pictures</small>
+        </div>
+
+    </footer>
+    <script>
+        var menu = document.getElementById("menu");
+        function show() {
+            menu.classList.toggle('show');
+        }
+        window.addEventListener('scroll', function () {
+            var dcmt = document.getElementById("header");
+            dcmt.style.backgroundColor = "#002147";
+            menu.style.backgroundColor = "#002147";
+        });
+    </script>
+     <script>
+        
+        var element = document.getElementById('root');
+        var inputs=document.querySelectorAll("input");
+        var resizeObserver = new ResizeObserver(function (entries) {
+            entries.forEach(function (entry) {
+                var newWidth = entry.contentRect.width;
+                if (newWidth > 800) {
+                    var x=220;
+                }
+                else if (newWidth <= 800 && newWidth > 600) {
+                      var x=newWidth/3;    
+                }
+                else if(newWidth<600){
+                      var x=newWidth/2;
+                }
+                for(var i=0;i<inputs.length-1;i++){
+                     if(i<4){
+                        inputs[i].style.width=x+"px";
+                     }
+                     else{
+                        inputs[i].style.width=2*x+"px";
+                     }
+                }
+            });
+        }); 
+        resizeObserver.observe(element);
+    </script>
+
+</body>
+</html>
